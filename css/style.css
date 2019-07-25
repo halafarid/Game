@@ -1,0 +1,160 @@
+body {
+	background:linear-gradient(rgba(60, 20, 20, 0.5), rgba(60, 20, 20, 0.5)), url(../images/back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 97vh;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.players {
+	background-color: #fff;
+	margin: 10px auto;
+	width: 80%;
+	height: 595px;
+}
+
+.players .new {
+	text-align: center;
+	color: #666;
+	position: absolute;
+	left: 550px;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.players .new:hover {
+	cursor: pointer;
+	color: #444;
+	font-weight: bold;
+}
+.players .new i {
+	margin-right: 10px;
+	color: #EB4D4D;
+	font-size: 25px;
+}
+.players img {
+	width: 90px;
+	height: 90px;
+	box-shadow: 3px 3px 10px #aaa;
+	position: absolute;
+	top: 120px;
+	left: 600px;
+}
+.players img:last-of-type
+{
+	top: 250px;
+}
+
+/* combine with player0 & player1 */
+.players .player0, .players .player1 {
+	width: 50%;
+	height: 100%;
+}
+.players .player0 {
+	float: left;
+}
+.players .player1 {
+	float: right;
+}
+
+	/*************/
+
+.players .player0 h2, .players .player1 h2 {
+	margin: 120px 25% 40px;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #444;
+	letter-spacing: 1px;
+}
+
+.players .player0 span, .players .player1 span {
+	margin: 40%;
+	font-size: 50px;
+	color: #EB4D4D;
+}
+
+.players .player0 .current, .players .player1 .current {
+	background-color: #EB4D4D;
+	width: 20%;
+	margin: 30% 35% 0px;
+	text-align: center;
+	padding: 15px 10px;
+}
+.players .player0 .current p, .players .player1 .current p {
+	margin: 0px 10px 15px;
+	text-transform: uppercase;
+	color: #444;
+	letter-spacing: 1px;
+}
+.players .player0 .current span, .players .player1 .current span {
+	font-size: 25px;
+	color: #f1f1f1;
+}
+/* End Combine */
+
+
+/* Start Buttons */
+.players .buttons {
+	text-align: center;
+	position: absolute;
+	top: 400px;
+	left: 530px;
+}
+
+.players .new {
+	margin-top: 20px;
+}
+
+.players .buttons button, .players .new, .players .buttons input {
+	margin-bottom: 20px;
+	padding: 10px;
+	outline: 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.players .buttons input {
+	width: 60%;	
+	font-size: 13px;
+	padding: 10px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.players .buttons button, .players .new {
+	background: none;
+	border: none;
+	color: #666;
+}
+.players .buttons button:hover {
+	cursor: pointer;
+	color: #444;
+	font-weight: bold;
+}
+.players .buttons button i {
+	margin-right: 10px;
+	color: #EB4D4D;
+	font-size: 20px;
+}
+/* End Buttons */
+
+
+/* Start Active */
+.active { background-color: #eee; }
+
+.active h2::after{
+	content: "\2022";
+	color: #EB4D4D;
+	margin-left: 10px;
+	font-size: 50px;
+}
+/* End Active */
+
+
+
+
+
+
+
+
